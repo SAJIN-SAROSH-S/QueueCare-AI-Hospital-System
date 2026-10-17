@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-900 min-h-screen flex flex-col font-sans;
+    overflow-x: hidden;
+    max-width: 100vw;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Prevent browser-default link coloring or underlining unless explicitly requested */
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  /* Standard button appearance reset */
+  button {
+    font-family: inherit;
+    color: inherit;
+  }
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}

@@ -1,0 +1,18 @@
+{
+  "model_version": "v1.0.0-synthetic-dev",
+  "trained_at": "2026-10-15T21:37:52.696862",
+  "is_synthetic_dev_data": true,
+  "sample_count": 1500,
+  "features": [
+    "patients_ahead",
+    "elapsed_consultation_minutes",
+    "avg_doctor_duration",
+    "hour_of_day",
+    "day_of_week",
+    "recent_clinic_delay_minutes"
+  ],
+  "baseline_mae": 2.82,
+  "ml_mae": 2.98,
+  "ml_rmse": 3.77,
+  "confidence_threshold": 0.85
+}
